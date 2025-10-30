@@ -152,7 +152,7 @@ body {
 /* Boutons inférieurs S10-S14 */
 .bottom-buttons {
   position: absolute;
-  bottom: 220px;
+  bottom: 180px;
   left: 300px;
   display: flex;
   gap: 90px;
