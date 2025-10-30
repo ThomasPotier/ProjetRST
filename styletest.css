@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  background-color: #3d3d3d;
+  width: 1620px;
+  height: 2160px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel {
+  position: relative;
+  width: 1620px;
+  height: 2160px;
+  background-color: #3d3d3d;
+  font-family: "Arial Narrow", sans-serif;
+  color: #eae6ca;
+}
+
+
+/* Gros bouton rouge */
+.emergency {
+  position: absolute;
+  top: 50px;
+  right: 200px;
+  width: 160px;
+  height: 160px;
+  background-color: #ff4d4d;
+  border-radius: 50%;
+  border: 15px solid #b00000;
+  cursor: pointer;
+}
+
+/* Boutons supérieurs jaunes */
+.top-buttons {
+  position: absolute;
+  top: 30px;
+  left: 275px;
+  display: flex;
+  gap: 90px;
+  align-items: center;
+}
+
+.top-buttons .btn {
+  width: 90px;
+  height: 120px;
+  border: 3px solid #e5b93f;
+  color: #e5b93f;
+  display: flex;
+  justify-content: center;
+  display: absolute;
+  top: 15px;
+  cursor: pointer;
+
+}
+
+.ok {
+  border: 3px solid #eae6ca;
+  width: 90px;
+  height: 130px;
+  color: #eae6ca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.arrows {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.arrow {
+  width: 70px;
+  height: 85px;
+  border: 3px solid #eae6ca;
+  color: #eae6ca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Écran central */
+.screen {
+  position: absolute;
+  top: 350px;
+  left: 350px;
+  width: 1168px;
+  height: 1525px;
+  background-color: #111;
+  border: 3px solid #eae6ca;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(9, 5fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+}
+
+.case1 { grid-area: 1 / 1 / 2 / 2; border: 3px solid #eae6ca; min-height: 160px; display: flex; align-items: center; justify-content: center; font-size: 60px;}
+.case2 { grid-area: 2 / 1 / 3 / 2; border: 3px solid #eae6ca; display: flex; align-items: center; justify-content: center; font-size: 80px;}
+.case3 { grid-area: 3 / 1 / 4 / 2; border: 3px solid #eae6ca; display: flex; align-items: center; justify-content: center; font-size: 80px;}
+.case4 { grid-area: 4 / 1 / 5 / 2; border: 3px solid #eae6ca; display: flex; align-items: center; justify-content: center;}
+.case5 { grid-area: 5 / 1 / 6 / 2; border: 3px solid #eae6ca; display: flex; align-items: center; justify-content: center;}
+.case6 { grid-area: 6 / 1 / 7 / 2; border: 3px solid #eae6ca; display: flex; align-items: center; justify-content: center;}
+.case7 { grid-area: 7 / 1 / 8 / 2; border: 3px solid #eae6ca; display: flex; align-items: center; justify-content: center;}
+.case8 { grid-area: 8 / 1 / 9 / 2; border: 3px solid #eae6ca; display: flex; align-items: center; justify-content: center;}
+.case9 { grid-area: 9 / 1 / 10 / 2; border: 3px solid #eae6ca; display: flex; align-items: center; justify-content: center;}
+.case10 { grid-area: 9 / 2 / 10 / 3; border: 3px solid #eae6ca; display: flex; align-items: flex-end; justify-content: center;}
+.case11 { grid-area: 9 / 3 / 10 / 4; border: 3px solid #eae6ca; display: flex; align-items: flex-end; justify-content: center;}
+.case12 { grid-area: 9 / 4 / 10 / 5; border: 3px solid #eae6ca; display: flex; align-items: center; justify-content: center;}
+.case13 { grid-area: 9 / 5 / 10 / 6; border: 3px solid #eae6ca; display: flex; align-items: center; justify-content: center;}
+.case14 { grid-area: 9 / 6 / 10 / 7; border: 3px solid #eae6ca; display: flex; align-items: center; justify-content: center; font-size: 60px;}
+.case15 { grid-area: 1 / 2 / 9 / 7; border:}
+
+/* Boutons latéraux S1-S9 */
+.side-buttons {
+  position: absolute;
+  top: 390px;
+  left: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.side-buttons .btn {
+  width: 90px;
+  height: 90px;
+  border: 10px solid #eae6ca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: Century Schoolbook;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Boutons inférieurs S10-S14 */
+.bottom-buttons {
+  position: absolute;
+  bottom: 60px;
+  left: 300px;
+  display: flex;
+  gap: 90px;
+}
+
+.bottom-buttons .btn {
+  width: 90px;
+  height: 90px;
+  border: 10px solid #eae6ca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: Century Schoolbook;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Gros bouton rouge */
+.btn-power {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 10px solid #eae6ca;
+  font-size: 70px;
+  font-weight: bolder;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

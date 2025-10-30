@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Interface Centrale</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <div class="panel">
+
+    <!-- Boutons latéraux -->
+    <div class="side-buttons">
+      <div class="btn" id="S1">S1</div>
+      <div class="btn" id="S2">S2</div>
+      <div class="btn" id="S3">S3</div>
+      <div class="btn" id="S4">S4</div>
+      <div class="btn" id="S5">S5</div>
+      <div class="btn" id="S6">S6</div>
+      <div class="btn" id="S7">S7</div>
+      <div class="btn" id="S8">S8</div>
+      <div class="btn" id="S9">S9</div>
+    </div>
+
+    <!-- Écran -->
+    <div class="screen">
+      <div class="screen-grid">
+        <div class="left-column">
+          <div class="box">SYS</div>
+          <div class="box">C</div>
+          <div class="box">N°</div>
+          <div class="box">→</div>
+          <div class="box">#</div>
+          <div class="box">⚙</div>
+          <div class="box">⦷</div>
+          <div class="box">2</div>
+          <div class="box">1</div>
+        </div>
+
+        <div class="right-content">
+          <div class="info-line">
+            <span>C 00 GSM-R F</span>
+            <span>885995</span>
+          </div>
+          <div style="font-style: italic; margin-bottom: 10px;">GSM-R F</div>
+          <div class="input-boxes">
+            <div class="input-box"></div>
+            <div class="input-box"></div>
+            <div class="input-box"></div>
+            <div class="input-box"></div>
+            <div class="input-box"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Boutons du bas -->
+      <div class="bottom-buttons">
+        <div class="btn">+</div>
+        <div class="btn">-</div>
+        <div class="btn">#</div>
+        <div class="btn">||</div>
+        <div class="btn btn-test">TEST</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.btn, .box').forEach(el => {
+      el.addEventListener('click', () => {
+        console.log(`Bouton ${el.textContent.trim()} cliqué`);
+      });
+    });
+  </script>
+</body>
+</html>
