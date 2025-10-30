@@ -43,16 +43,31 @@ body {
 }
 
 .top-buttons .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 90px;
   height: 120px;
   border: 3px solid #e5b93f;
   color: #e5b93f;
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
+}
+
+#ligneSono {
+  margin-bottom: 15px;
+}
+
+#ligneAsct {
+  margin-bottom: 45px;
+}
+
+#ligneSai {
+  margin-bottom: 30px;
+}
+
+#ligneInterphone {
+  margin-bottom: 25px;
 }
 
 .ok {
