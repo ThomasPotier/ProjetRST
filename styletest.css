@@ -54,21 +54,33 @@ body {
   cursor: pointer;
 }
 
-#ligneSono {
+.top-line {
+  width: 60px;
+  height: 12px;
+  background-color: #c49b39; /* jaune foncé initial */
+}
+
+/* Couleur jaune clair temporaire */
+.active {
+  background-color: #ffe680 !important;
+}
+
+#topLineSono {
   margin-bottom: 15px;
 }
 
-#ligneAsct {
-  margin-bottom: 45px;
+#topLineAsct {
+  margin-bottom: 42px;
 }
 
-#ligneSai {
+#topLineSai {
   margin-bottom: 30px;
 }
 
-#ligneInterphone {
+#topLineInterphone {
   margin-bottom: 25px;
 }
+
 
 .ok {
   border: 3px solid #eae6ca;
