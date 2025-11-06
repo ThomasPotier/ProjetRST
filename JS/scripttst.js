@@ -7,7 +7,7 @@ bouton.addEventListener('click', () => {
     topLine.classList.add('active');
     setTimeout(() => {
       topLine.classList.remove('active');
-    }, 5000); // 5 secondes
+    }, 1000); // 5 secondes
   });
 });
 
